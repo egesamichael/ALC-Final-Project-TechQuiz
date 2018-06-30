@@ -152,8 +152,6 @@ public class MainActivity extends Activity {
                 if (checked)
                     answer4 = true;
                 break;
-
-
         }
 
     }
@@ -188,7 +186,7 @@ public class MainActivity extends Activity {
         answered = year.getText().toString();
 
         //Check if what the user answered is correct
-        if (answered == correctAnswer) {
+        if (answered .equals(correctAnswer)) {
             answer6 = true;
         } else {
 

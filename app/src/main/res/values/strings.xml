@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Tech Quiz</string>
     <string name="question1">Who is the Founder Of Facebook?</string>
-    <string name="question2">Which of the following company uses iOS in there devices?</string>
+    <string name="question2">Which of the following company uses iOS in their devices?</string>
     <string name="question3">The Android OS was developed by Google.</string>
     <string name="question4">Which of the following is the correct way of writting a Java method?.</string>
     <string name="question5">Which of the following are mobile OS?.</string>
