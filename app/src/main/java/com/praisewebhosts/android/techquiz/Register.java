@@ -23,33 +23,19 @@ public class Register extends Activity {
 
     //Get the current User's Username
 
-    public void getUser (View view) {
+    public void getUser(View view) {
 
         EditText username = (EditText) findViewById(R.id.user);
 
-         user = username.getText().toString();
+        user = username.getText().toString();
 
-     //   Toast toast = Toast.makeText(Register.this, "Hello " + user, Toast.LENGTH_LONG);
-
-       // toast.show();
+        //  Create an Intent to go to the next Activity and pass the users name
 
         Intent goHome = new Intent(this, MainActivity.class);
         goHome.putExtra("gotUser", user);
 
         startActivity(goHome);
-
-
     }
-/*
-    public void saveUser (String username){
-
-        username = user;
-
-        getUsername(username);
-
-    }
-    */
-
 
 
 }

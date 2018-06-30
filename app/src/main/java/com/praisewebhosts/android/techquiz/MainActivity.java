@@ -77,7 +77,6 @@ public class MainActivity extends Activity {
         }
     }
 
-
     public void questionTwo(View view) {
         // Is the button now checked?
 
@@ -91,7 +90,6 @@ public class MainActivity extends Activity {
 
                     break;
             case R.id.apple:
-
 
                 if (checked)
                     // setting the value of answer 2 to ture because the ckecked button is the correct answer
@@ -130,8 +128,6 @@ public class MainActivity extends Activity {
                     // setting the value of answer 1 to ture because the ckecked button is the correct answer
                     answer3 = true;
                 break;
-
-
         }
     }
 
@@ -158,10 +154,13 @@ public class MainActivity extends Activity {
 
     public void questionFive(View view) {
         // action for checkbox click
+
         switch (view.getId()) {
+
             case R.id.android:
                 answer5 = true;
                 break;
+
             case R.id.firefox:
                 answer5 = true;
                 break;
@@ -174,26 +173,6 @@ public class MainActivity extends Activity {
         }
     }
 
-    public void questionSix(View view) {
-        //Declare variables for the users answer and the correct answer
-        String answered;
-        String correctAnswer = "2018";
-
-
-        EditText year = (EditText) findViewById(R.id.question6);
-
-        //Get the users input from the EditText view
-        answered = year.getText().toString();
-
-        //Check if what the user answered is correct
-        if (answered .equals(correctAnswer)) {
-            answer6 = true;
-        } else {
-
-            answer6 = false;
-        }
-
-    }
 
     //Getting the total score by checking if the correct answers are selected
     public void getScore(View view) {
@@ -220,6 +199,22 @@ public class MainActivity extends Activity {
         if (answer5) {
             // if answer1 == true add 1 to the current score
             quizScore = quizScore + 1;
+        }
+
+
+        String answered;
+
+        EditText year = (EditText) findViewById(R.id.question6);
+
+        //Get the users input from the EditText view
+        answered = year.getText().toString();
+
+        //Check if what the user answered is correct
+        if (answered.equals("2018")) {
+            answer6 = true;
+        } else {
+
+            answer6 = false;
         }
 
         if (answer6) {

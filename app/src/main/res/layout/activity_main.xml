@@ -19,14 +19,13 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/user"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingBottom="16dp"
                 android:paddingTop="16dp"
-                android:id="@+id/user"
-                android:textSize="24sp"
                 android:textColor="@color/colorPrimaryDark"
-                />
+                android:textSize="24sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -35,10 +34,6 @@
                 android:paddingTop="16dp"
                 android:text="ALCwithGoogle 3.0 Tech Quiz Final Project"
                 android:textSize="16sp" />
-
-
-
-
 
 
             <TextView
@@ -238,24 +233,23 @@
                 android:textSize="16sp" />
 
             <EditText
-                android:layout_height="wrap_content"
-                android:layout_width="match_parent"
-                android:maxLines="1"
                 android:id="@+id/question6"
-                android:ems="10"/>
-
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:maxLines="1" />
 
             <Button
 
-                    android:layout_marginTop="16dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Get Quiz Score"
-                  android:onClick="getScore"
-                    android:textColor="@android:color/white"
-                    android:background="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorPrimaryDark"
+                android:onClick="getScore"
+                android:text="Get Quiz Score"
+                android:textColor="@android:color/white"
 
-                    />
+                />
         </LinearLayout>
     </android.support.constraint.ConstraintLayout>
 
