@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Tech Quiz</string>
+    <string name="app_name">Quiz App</string>
     <string name="question1">Who is the Founder Of Facebook?</string>
     <string name="question2">Which of the following company uses iOS in their devices?</string>
     <string name="question3">The Android OS was developed by Google.</string>
